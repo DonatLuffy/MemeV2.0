@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class SentMemesTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
     var memes: [Meme]! {
         let object = UIApplication.shared.delegate
         let appDelegate = object as! AppDelegate
@@ -17,7 +19,7 @@ class SentMemesTableViewController: UIViewController, UITableViewDataSource, UIT
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        tableView!.reloadData()
+        tableView!.reloadData()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

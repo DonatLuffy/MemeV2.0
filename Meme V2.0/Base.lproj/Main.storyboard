@@ -18,46 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8VG-EG-ubJ">
-                                <rect key="frame" x="44" y="0.0" width="724" height="32"/>
-                                <color key="backgroundColor" red="0.90971416234970093" green="0.90986675024032593" blue="0.9096941351890564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <navigationItem title="Meme" id="DeQ-uP-5oh">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="ACA-fE-uzn">
-                                            <connections>
-                                                <action selector="share" destination="BYZ-38-t0r" id="A9C-wW-GK8"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="2Q3-en-cNB" userLabel="Cancel">
-                                            <connections>
-                                                <action selector="cancelEditor" destination="BYZ-38-t0r" id="K9n-J0-EUQ"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="USX-f0-GFv">
                                 <rect key="frame" x="44" y="32" width="724" height="272"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" text="TOP" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ow-kl-jhV" userLabel="TOP_TextField">
-                                <rect key="frame" x="218.66666666666663" y="82" width="375" height="50"/>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" text="TOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ow-kl-jhV" userLabel="TOP_TextField">
+                                <rect key="frame" x="44" y="82" width="724" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.97647058823529409" blue="0.97647058823529409" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="Rsf-Aq-91n"/>
                                     <constraint firstAttribute="height" constant="50" id="UXz-fr-Jpw" userLabel="height = 70"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="top" text="BOTTOM" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9CQ-me-1MG" userLabel="BOTTOM_TextField">
-                                <rect key="frame" x="218" y="204" width="376" height="50"/>
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="top" text="BOTTOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9CQ-me-1MG" userLabel="BOTTOM_TextField">
+                                <rect key="frame" x="44" y="204" width="724" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.97647058823529409" blue="0.97647058823529409" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7Io-bH-6zX" userLabel="height = 70"/>
-                                    <constraint firstAttribute="width" constant="376" id="OFq-Fb-cPo"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -79,11 +59,24 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BTA-bV-M0F">
-                                <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8VG-EG-ubJ">
+                                <rect key="frame" x="44" y="0.0" width="724" height="32"/>
+                                <color key="backgroundColor" red="0.90971416234970093" green="0.90986675024032593" blue="0.9096941351890564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Meme" id="DeQ-uP-5oh">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="ACA-fE-uzn">
+                                            <connections>
+                                                <action selector="share" destination="BYZ-38-t0r" id="A9C-wW-GK8"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="2Q3-en-cNB" userLabel="Cancel">
+                                            <connections>
+                                                <action selector="cancelEditor" destination="BYZ-38-t0r" id="K9n-J0-EUQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -94,13 +87,16 @@
                             <constraint firstItem="6Ow-kl-jhV" firstAttribute="top" secondItem="8VG-EG-ubJ" secondAttribute="baseline" constant="50" id="KYR-IY-aIi"/>
                             <constraint firstItem="8VG-EG-ubJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N7K-VG-ZUy"/>
                             <constraint firstItem="SZN-M6-zO8" firstAttribute="top" secondItem="USX-f0-GFv" secondAttribute="bottom" id="R6D-F9-7xy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="6Ow-kl-jhV" secondAttribute="leading" id="R87-eB-pWT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SZN-M6-zO8" secondAttribute="trailing" id="UaG-Ys-CVh"/>
                             <constraint firstItem="SZN-M6-zO8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vol-0f-5IS"/>
                             <constraint firstItem="9CQ-me-1MG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aXu-Is-zaN"/>
                             <constraint firstItem="USX-f0-GFv" firstAttribute="top" secondItem="8VG-EG-ubJ" secondAttribute="bottom" id="dGy-cl-h7V"/>
                             <constraint firstItem="USX-f0-GFv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fWd-Hw-aly"/>
+                            <constraint firstItem="6Ow-kl-jhV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="foy-Cg-j5R"/>
                             <constraint firstItem="8VG-EG-ubJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hnj-zf-xCO"/>
-                            <constraint firstItem="6Ow-kl-jhV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ivJ-Pi-yQE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="9CQ-me-1MG" secondAttribute="leading" id="k5j-jU-L2C"/>
+                            <constraint firstItem="9CQ-me-1MG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kaa-00-KQs"/>
                             <constraint firstItem="8VG-EG-ubJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pnZ-ck-Oba"/>
                             <constraint firstItem="9CQ-me-1MG" firstAttribute="bottom" secondItem="USX-f0-GFv" secondAttribute="bottom" constant="-50" id="wh7-ir-tHA"/>
                             <constraint firstItem="SZN-M6-zO8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yTj-8e-GNi"/>
@@ -183,6 +179,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="pdz-ad-YwJ" id="iMm-Ou-lyp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfQ-xi-67y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -358,6 +357,6 @@
         <image name="table_30x30" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GvQ-P0-TMX"/>
+        <segue reference="8z8-vl-oQp"/>
     </inferredMetricsTieBreakers>
 </document>
